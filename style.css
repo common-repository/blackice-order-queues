@@ -1,0 +1,91 @@
+/*
+                   "-rexp" => "(Ready to Export)",
+                   "-aimp" => "(Awaiting Import)",
+                   "-adis" => "(Awaiting Dispatch)",
+                   "-comp" => "(Dispatched)",
+                   "-qery" => "(Query)",
+*/
+
+/* Bright Green - Dispatched or ready to dispatch */
+.order-status.status-bit-rexp,
+.order-status.status-dunamis-rexp,
+.order-status.status-gf-rexp,
+.order-status.status-ppe-rexp,
+.order-status.status-patrol-man-rexp,
+.order-status.status-totr-rexp{
+    background: #3ffb5f;
+    color: #0c942b;
+}
+
+/* Pale Orange Waiting for Automatic Import */
+.order-status.status-bit-aimp,
+.order-status.status-dunamis-aimp,
+.order-status.status-gf-aimp,
+.order-status.status-ppe-aimp,
+.order-status.status-patrol-man-aimp,
+.order-status.status-totr-aimp{
+    background: #ffdd90;
+    color: #383838;
+}
+
+.subsubsub .wc-bit-wait{
+    background-color: #ffdd90;
+}
+
+/* Pale Blue Waiting on dispatch */
+.order-status.status-bit-adis,
+.order-status.status-dunamis-adis,
+.order-status.status-gf-await-adis,
+.order-status.status-ppe-adis,
+.order-status.status-patrol-man-adis,
+.order-status.status-totr-adis{
+    background: #5db7e2;
+    color: #383838;
+}
+
+/* Pale Yellow  */
+.order-status.status-bit-comp,
+.order-status.status-dunamis-comp,
+.order-status.status-gf-comp,
+.order-status.status-ppe-comp,
+.order-status.status-patrol-man-comp,
+.order-status.status-totr-comp{
+    background: #f3f8a7;
+    color: #383838;
+}
+.subsubsub .wc-bit-comp,
+.subsubsub .wc-dunamis-comp,
+.subsubsub .wc-gf-comp,
+.subsubsub .wc-ppe-comp,
+.subsubsub .wc-patrol-man-comp,
+.subsubsub .wc-totr-comp{
+    background-color: #f3f8a7;
+}
+
+/* Bright Red Needs immediate action or query on order */
+.order-status.status-bit-qery,
+.order-status.status-dunamis-qery,
+.order-status.status-gf-await-qery,
+.order-status.status-ppe-qery,
+.order-status.status-patrol-man-qery,
+.order-status.status-totr-qery,
+.order-status.status-bit-multi{
+    background: #ff3737;
+    color: #fff;
+}
+
+.subsubsub .wc-bit-qery,
+.subsubsub .wc-dunamis-qery,
+.subsubsub .wc-gf-await-qery,
+.subsubsub .wc-ppe-qery,
+.subsubsub .wc-patrol-man-qery,
+.subsubsub .wc-totr-qery,
+.subsubsub .wc-bit-multi{
+    background-color: #ff3737;
+}
+        
+
+.subsubsub .wc-gf-errapi,
+.subsubsub .wc-gf-errart{
+    background-color: #f00;
+}
